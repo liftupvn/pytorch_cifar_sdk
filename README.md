@@ -1,4 +1,6 @@
 # Train CIFAR10 with PyTorch
+python main.py --epoch 2 --name resnet18_v2
+
 
 I'm playing with [PyTorch](http://pytorch.org/) on the CIFAR10 dataset.
 
