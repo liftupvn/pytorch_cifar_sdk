@@ -200,5 +200,5 @@ benchmark = {
 }
 
 #--------------------------------------------------------------------------------------
-MLOps.model.save_checkpoint('SimpleDLA_v1', benchmark, './checkpoint/ckpt.pth')
+MLOps.model.save_checkpoint(args.name, benchmark, './checkpoint/ckpt.pth')
 MLOps.log.flush()
