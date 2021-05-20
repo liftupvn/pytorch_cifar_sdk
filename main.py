@@ -196,7 +196,7 @@ for epoch in range(start_epoch, start_epoch + args.epoch):
     scheduler.step()
 
 benchmark = {
-    'accuracy': best_acc/100
+    'accuracy': best_acc
 }
 
 #--------------------------------------------------------------------------------------
