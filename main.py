@@ -24,11 +24,12 @@ parser.add_argument('--name', default='Simple DLA', type=str, help='name')
 parser.add_argument('--epoch', default=1, type=int, help='number of epoch')
 parser.add_argument('--resume', '-r', action='store_true', default=False,
                     help='resume from checkpoint')
+parser.add_argument('--username', default='seta dev', type=str, help='name of user')
 args = parser.parse_args()
 
 
 from bluetraining import MLOps
-MLOps.init(type_name='training', name=args.name, username='Cao Dinh Duc')
+MLOps.init(type_name='training', name=args.name, username=args.username)
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 best_acc = 0
