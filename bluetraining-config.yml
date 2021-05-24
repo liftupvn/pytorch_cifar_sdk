@@ -8,3 +8,5 @@ config:
   base_version: '2.0.0'
 logging:
   sync_time_interval_s: 10.0
+system:
+  log_level: 'DEBUG'
